@@ -4,6 +4,7 @@ Aplicación de una sola página (SPA), responsive y _mobile-first_, en JavaScrip
 
 - **Aplicación desplegada**: _por completar (URL de Vercel)_
 - **Capturas de pantalla**: carpeta ...docs/screenshots/
+- https://bakerstreetchat.vercel.app/
 
 ![Inicio](docs/screenshots/home.desktop.jpg)
 
