@@ -2,11 +2,8 @@
 
 Aplicación de una sola página (SPA), responsive y _mobile-first_, en JavaScript nativo, para conversar con tres personajes de Conan Doyle. Usa la API de Gemini a través de una función serverless de Vercel.
 
-- **Aplicación desplegada**: _por completar (URL de Vercel)_
+- **Aplicación desplegada**: https://bakerstreetchat.vercel.app/
 - **Capturas de pantalla**: carpeta ...docs/screenshots/
-- https://bakerstreetchat.vercel.app/
-
-![Inicio](docs/screenshots/home.desktop.jpg)
 
 ## Personajes
 
