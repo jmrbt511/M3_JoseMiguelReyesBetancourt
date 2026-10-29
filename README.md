@@ -17,7 +17,7 @@ Las novelas de Sherlock Holmes (Arthur Conan Doyle) son de dominio público, por
 
 ## Imágenes y logotipo
 
-- `assets/characters/`: retratos de Holmes, Watson y Moriarty (WebP, 640×640), mostrados en las tarjetas de la página de inicio.
+- `assets/characters/`: retratos de Holmes, Watson y Moriarty (Webp, 640×640), mostrados en las tarjetas de la página de inicio.
 - `assets/comicsanscon-logo.svg`: logotipo de «ComicSansCon», agencia digital ficticia usada solo para esta demostración.
 
 ## Estructura
