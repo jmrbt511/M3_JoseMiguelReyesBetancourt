@@ -37,6 +37,9 @@ export default async function handler(req, res) {
         .json({ error: `Error de la API de Gemini (${response.status}).` });
     return res.status(200).json({ reply: extractReply(await response.json()) });
   } catch (err) {
-    return res.status(502).json({ error: err.message });
+    console.error(err);
+    return res
+      .status(502)
+      .json({ error: "No se pudo contactar con el servicio de Gemini." });
   }
 }
