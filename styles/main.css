@@ -111,10 +111,28 @@ body::after {
 }
 .bg-ready body::before {
   opacity: 1;
-  -webkit-mask-image: conic-gradient(from 0deg at 50% 50%, #000 var(--sweep), transparent calc(var(--sweep) + 0.5deg)),
-    radial-gradient(circle at 50% 50%, #000 var(--reach), transparent calc(var(--reach) + 6%));
-  mask-image: conic-gradient(from 0deg at 50% 50%, #000 var(--sweep), transparent calc(var(--sweep) + 0.5deg)),
-    radial-gradient(circle at 50% 50%, #000 var(--reach), transparent calc(var(--reach) + 6%));
+  -webkit-mask-image:
+    conic-gradient(
+      from 0deg at 50% 50%,
+      #000 var(--sweep),
+      transparent calc(var(--sweep) + 0.5deg)
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      #000 var(--reach),
+      transparent calc(var(--reach) + 6%)
+    );
+  mask-image:
+    conic-gradient(
+      from 0deg at 50% 50%,
+      #000 var(--sweep),
+      transparent calc(var(--sweep) + 0.5deg)
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      #000 var(--reach),
+      transparent calc(var(--reach) + 6%)
+    );
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
   animation: spiral-reveal 3.2s cubic-bezier(0.45, 0, 0.2, 1) 0.15s both;
@@ -183,7 +201,8 @@ h1 {
   border-top: 1px solid #c9d1d1;
   text-align: center;
   color: var(--muted);
-  font-family: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-family:
+    "Space Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   font-size: 0.85rem;
 }
 .site-footer p {
@@ -217,7 +236,11 @@ h1 {
 .card__img {
   display: block;
   width: 100%;
-  height: clamp(8rem, calc(100svh - var(--chrome, 34rem)), var(--img-max, 20rem));
+  height: clamp(
+    8rem,
+    calc(100svh - var(--chrome, 34rem)),
+    var(--img-max, 20rem)
+  );
   object-fit: cover;
   object-position: center 20%;
   border-radius: 4px;
@@ -472,5 +495,18 @@ img.avatar {
   .dots i {
     animation: none;
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header .brand {
+    display: none;
+  }
+  .site-header #nav {
+    gap: 0.75rem;
+  }
+  .site-header #nav a {
+    white-space: nowrap;
+    font-size: 0.9rem;
   }
 }
