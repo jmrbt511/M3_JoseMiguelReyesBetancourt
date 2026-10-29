@@ -23,13 +23,16 @@ export default async function handler(req, res) {
   const model = process.env.GEMINI_MODEL || "gemini-flash-lite-latest";
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
+  const body = buildGeminiBody(character, messages.slice(-MAX_MESSAGES));
+  if (body.contents.length === 0) {
+    return res.status(400).json({ error: "Solicitud no válida." });
+  }
+
   try {
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-      body: JSON.stringify(
-        buildGeminiBody(character, messages.slice(-MAX_MESSAGES)),
-      ),
+      body: JSON.stringify(body),
     });
     if (!response.ok)
       return res
