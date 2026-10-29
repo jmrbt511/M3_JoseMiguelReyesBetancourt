@@ -6,8 +6,8 @@
   --gas: #d9a441;
   --danger: #a33a3a;
   --accent: #2f5d62;
-  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -36,8 +36,8 @@ a {
 .site-header {
   display: grid;
   grid-template-areas:
-    "agency nav"
-    "brand brand";
+    'agency nav'
+    'brand brand';
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.5rem 1rem;
@@ -78,31 +78,31 @@ a {
   padding: 0.25rem 0;
   border-bottom: 2px solid transparent;
 }
-#nav a[aria-current="page"] {
+#nav a[aria-current='page'] {
   border-color: var(--gas);
 }
 
 /* Fondo: imagen fija que aparece en espiral + velo oscuro para legibilidad */
 @property --sweep {
-  syntax: "<angle>";
+  syntax: '<angle>';
   inherits: false;
   initial-value: 0deg;
 }
 @property --reach {
-  syntax: "<percentage>";
+  syntax: '<percentage>';
   inherits: false;
   initial-value: 0%;
 }
 body::before,
 body::after {
-  content: "";
+  content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
 }
 body::before {
   z-index: -2;
-  background: url("/assets/background.webp") center / cover no-repeat;
+  background: url('/assets/background.webp') center / cover no-repeat;
   opacity: 0;
 }
 body::after {
@@ -202,7 +202,7 @@ h1 {
   text-align: center;
   color: var(--muted);
   font-family:
-    "Space Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    'Space Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
   font-size: 0.85rem;
 }
 .site-footer p {
@@ -441,7 +441,7 @@ img.avatar {
 
 @media (min-width: 700px) {
   .site-header {
-    grid-template-areas: "agency brand nav";
+    grid-template-areas: 'agency brand nav';
     grid-template-columns: 1fr auto 1fr;
   }
   :root {
@@ -483,6 +483,11 @@ img.avatar {
   }
   .chat {
     max-width: 52rem;
+  }
+  .card__img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 20%;
   }
 }
 
