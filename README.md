@@ -68,4 +68,4 @@ Las pruebas no usan red: `fetch` se simula (`vi.fn`, `vi.stubGlobal`) tanto para
 
 ## Uso de la inteligencia artificial
 
-Las imágenes de los 3 personajes fueron generadas a partir de imágenes disponibles en internet pero modificadas para obtener el resultado deseado. Gemini genera las respuestas de los personajes en tiempo de ejecución. Un asistente de IA (Claude) ayudó a producir la estructura inicial del código y las pruebas; el código fue revisado y ejecutado y se hicieron modificaciones hasta obtener el resultado final.
+Las imágenes de los 3 personajes fueron generadas a partir de imágenes disponibles en internet que no poseen derechos de autor, pero modificadas para obtener el resultado deseado. Las imágenes de los 3 personajes tienen firma digital de ChatGPT. Gemini genera las respuestas de los personajes en tiempo de ejecución. Un asistente de IA (Claude) ayudó a hacer mejoras y modificaciones hasta obtener el resultado final.
