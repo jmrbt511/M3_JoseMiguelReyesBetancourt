@@ -1,6 +1,6 @@
 # Baker Street Chat
 
-Aplicación de una sola página (SPA), responsive y _mobile-first_, en JavaScript nativo, para conversar con tres personajes de Conan Doyle. Usa la API de Gemini a través de una función serverless de Vercel.
+Aplicación de una sola página (SPA), adaptable y "mobile-first", en JavaScript nativo, para conversar con tres personajes de Conan Doyle. Usa la API de Gemini a través de una función serverless de Vercel.
 
 - **Aplicación desplegada**: https://bakerstreetchat.vercel.app/
 - **Capturas de pantalla**: carpeta ...docs/screenshots/
