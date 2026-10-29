@@ -5,8 +5,7 @@ Aplicación de una sola página (SPA), responsive y _mobile-first_, en JavaScrip
 - **Aplicación desplegada**: _por completar (URL de Vercel)_
 - **Capturas de pantalla**: carpeta ...docs/screenshots/
 
-![Inicio](docs/screenshots/home.png)
-![Conversación](docs/screenshots/chat.png)
+![Inicio](docs/screenshots/home.desktop.jpg)
 
 ## Personajes
 
