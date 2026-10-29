@@ -1,0 +1,14 @@
+{
+  "name": "baker-street-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SPA en Vanilla JS: conversa con Sherlock Holmes, el Dr. Watson y Moriarty usando Gemini",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.0"
+  }
+}

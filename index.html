@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baker Street Chat</title>
+  <meta name="description" content="Conversa con Sherlock Holmes, el Dr. Watson y el profesor Moriarty.">
+  <link rel="preload" as="image" href="/assets/background.webp" fetchpriority="low">
+  <link rel="stylesheet" href="/styles/main.css">
+  <noscript><style>body::before{opacity:1}</style></noscript>
+  <script>
+    // Lanza la aparición en espiral cuando la imagen ya está descargada.
+    (function () {
+      var root = document.documentElement;
+      var img = new Image();
+      var go = function () { root.classList.add('bg-ready'); };
+      img.onload = go;
+      img.onerror = go;
+      img.src = '/assets/background.webp';
+      if (img.complete) go();
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="agency" href="/about" data-link aria-label="ComicSansCon, agencia digital (ficticia)"><img src="/assets/comicsanscon-logo.svg" alt="ComicSansCon" width="175" height="40"></a>
+    <a href="/" data-link class="brand">Baker Street Chat</a>
+    <nav id="nav" aria-label="Navegación principal"></nav>
+  </header>
+  <main id="app"></main>
+  <footer class="site-footer">
+    <p>© 2026 José Miguel Reyes Betancourt — Todos los derechos reservados</p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
